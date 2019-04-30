@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <% include ../partials/head %>
+     </head>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+
+    <body>
+
+        <form id="searchBookForm" method="POST">
+            <input class="searchBook" id="searchisbn" type="text" name="ISBN" placeholder="ISBN" required><br>
+            <button id="searchBookButton" type="submit">Search</button>
+        </form>
+
+        <div id="emailList">
+            <% profileData.forEach((user, key)=>{ %>
+                <div class="emailDiv" id="email_<%= key %>">         
+                    <div class="emailUList" id="">
+                        <p class="emailLink" id="userName">
+                            <a href = "mailto:<%= user.email %>?Subject=BookIt%20Request"><%= user.fName %> <%= user.lName %></a> 
+                        </p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+
+    </body>
+
+    <footer> <% include ../partials/footer %> </footer>
+</html>

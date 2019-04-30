@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title>BookIT</title>
+
+        <% include ../partials/head %>        
+    </head>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <body>
+        <div id="registerFormDiv">
+            <form class="indregForm" id="registerForm" action="" method="POST">
+                <input class="indregField" id="registerfName" type="text" name="fName" placeholder="first name" required><br>
+                <input class="indregField" id="registermName" type="text" name="mName" placeholder="middle name(optional)"><br>
+                <input class="indregField" id="registerlName" type="text" name="lName" placeholder="last name" required><br>
+                <input class="indregField" id="registeremail" type="text" name="email" placeholder="email" required><br>
+                <input class="indregField" id="registerpassword" type="password" name="password" placeholder="password" required><br>
+                <button class="indregButton" id="registerSubmit"  type="submit">Register</button>
+            </form>
+        </div>
+        <div id="needToLogin">
+            <p>Already have an account? <a href="./">sign in</a></p>
+        </div>
+    </body>
+
+    <footer><% include ../partials/footer %></footer>
+</html>

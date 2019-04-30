@@ -1,0 +1,210 @@
+/*Validate at http://jigsaw.w3.org/css-validator/ */
+
+html,body {
+	height:100%;
+	width:100%;
+	margin:0;
+}
+
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url("https://i.imgur.com/vZOJEWt.jpg");
+}
+
+.indregForm .indregField{
+	width: 25%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.indregForm .indregButton{
+	width: 25%;
+	background-color: brown;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+button:hover{
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1)
+}
+
+  
+#registerFormDiv {
+	text-align: center;
+}
+
+#registerForm {
+	padding: 1em;
+}
+
+#needToReg{
+	text-align: center;
+	color: white;
+}
+
+/* LOGIN */
+
+#loginBody {
+	text-align: center;
+	margin: auto;
+}
+
+#needToLogin{
+	text-align: center;
+	color: white;
+}
+
+/* PROFILE */
+
+#bookSearchButton{
+	text-align: center;
+}
+
+#bookSearch{
+	width: 25%;
+	background-color: brown;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#addBookForm {
+	text-align: center;
+}
+
+.addBook{
+	width: 25%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#addBookButton{
+	width: 25%;
+	background-color: brown;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#bookList{
+
+}
+
+.book{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url("https://i.imgur.com/6SKFoP2m.png");
+	width: 320px;
+	height: 229px;
+	display:table-cell;
+}
+
+.bookUList{
+	list-style: none;
+	position: relative;
+	top: 3em;
+	left: 2em;
+	max-width: 270;
+}
+
+/* SEARCH */
+
+#searchBookForm{
+	text-align: center;
+}
+
+.searchBook{
+	width: 25%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#searchBookButton{
+	width: 25%;
+	background-color: brown;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.emailUList{
+	text-align: center;
+}
+
+.emailLink a{
+	font-size: 20pt;
+	color: white;
+	text-decoration: none;
+}
+
+.emailLink a:hover{
+	color: brown;
+}
+
+/* May need to use #headerDiv instead of header */
+header {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: black;
+	background:rgba(0, 0, 0, .5)
+}
+
+#headerDiv{
+
+}
+
+/* May need to use #pageHead instead of head */
+head {
+	
+	
+}
+
+/* May need to use #footerDiv instead of footer */
+footer {
+	font-size: .85em;
+	text-align: center;
+	background-color: black;
+	width:100%;
+	padding:20px;
+	padding-bottom:16px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:rgba(0, 0, 0, .5)
+}

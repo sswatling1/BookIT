@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <% include ../partials/head %>
+    </head>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <body id="indexBody">
+        <div id="loginBody">
+            <form class="indregForm" id="loginForm" action="" method="POST">
+                <input class="indregField" id="email" type="text" name="email" placeholder="email" required><br>
+                <input class="indregField" id="password" type="password" name="password" placeholder="password" required><br>
+                <button class="indregButton" type="submit">Log In</button>
+            </form>
+
+            <div id="needToReg">
+                <p>Need to register? <a href="./register">Register</a></p>
+            </div>
+        </div>
+    </body>
+
+    <footer><% include ../partials/footer %></footer>
+
+</html>
