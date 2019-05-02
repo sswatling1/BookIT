@@ -9,8 +9,6 @@ module.exports = (app)=>{
     //The profile login page
     app.get("/profile/:id", urlencodedParser, (req, res)=>{
 
-        console.log("get request made");
-
         mongoose.connect("mongodb+srv://User0:Password@bookit-f6qff.mongodb.net/BookIT?retryWrites=true", {useNewUrlParser:true}, (err, db)=>{
             if(err) throw err; 
 

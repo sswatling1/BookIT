@@ -1,5 +1,3 @@
-/*Validate at http://jigsaw.w3.org/css-validator/ */
-
 html,body {
 	height:100%;
 	width:100%;
@@ -66,7 +64,31 @@ button:hover{
 	color: white;
 }
 
-/* PROFILE */
+/* PROFILE ---------------------------------------------------------------------*/
+
+#ownedBooks{
+	color: white;
+	font-size: 20pt;
+	margin-bottom: 10px;
+}
+
+#profileName{
+	color: white;
+	font-size: 30pt;
+	text-align: center;
+}
+
+#logout{
+	font-size: 14pt;
+	color: white;
+	text-decoration: none;
+	vertical-align: top;
+	text-align: right;
+}
+
+#logout:hover{
+	color: brown;
+}
 
 #bookSearchButton{
 	text-align: center;
@@ -113,10 +135,7 @@ button:hover{
 }
 
 .book{
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-size:auto;
 	background-image: url("https://i.imgur.com/6SKFoP2m.png");
 	width: 320px;
 	height: 229px;
@@ -131,7 +150,7 @@ button:hover{
 	max-width: 270;
 }
 
-/* SEARCH */
+/* SEARCH ---------------------------------------------------------------------*/
 
 #searchBookForm{
 	text-align: center;
@@ -182,29 +201,17 @@ header {
 }
 
 #headerDiv{
-
+	width:95%;
+	margin: auto;
+	display: inline-block;
 }
 
-/* May need to use #pageHead instead of head */
-head {
-	
-	
-}
-
-/* May need to use #footerDiv instead of footer */
-footer {
-	font-size: .85em;
-	text-align: center;
+footer{
 	background-color: black;
 	width:100%;
-	padding:20px;
-	padding-bottom:16px;
-	color:white;
-	font-weight:bold;
-	font-size:18px;
-	text-align:center;
-	position:fixed;
-	bottom:0;
-	left:0;
-	background:rgba(0, 0, 0, .5)
+	position: fixed;
+	bottom: 0px;
+	height: 50px;
+	background:rgba(0, 0, 0, .5);
+	
 }

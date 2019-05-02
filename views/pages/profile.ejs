@@ -7,19 +7,14 @@
 
     <header>
         <% include ../partials/header %>
-       
         
         <a id="logout" href='../'>Log Out </a>
-
-
     </header>
 
 
     <body>
 
-        <h1><%= profileData.fName %>'s profile body</h1>
-
-        <p>Owned books: <%= profileData.books.length %></p>
+        <h1 id="profileName"><%= profileData.fName %> <%= profileData.mName %> <%= profileData.lName %></h1>
 
         <form id="addBookForm" method="POST">
             <input class="addbook" id="isbn" type="text" name="ISBN" placeholder="ISBN" required><br>
@@ -32,30 +27,32 @@
             <button id="bookSearch" type="" onclick="window.open('../search')">Request Books</button>
         </div>
 
+        <p id="ownedBooks">Your books: </p>
+
         <div id="bookList">  
-        <% profileData.books.forEach((book, key)=>{ %>
-            <div class="book" id="book_<%= key %>">         
-                <ul class="bookUList" id="">
-                    <li id="bookisbn"><% if(book.ISBN != "") { %>
-                        ISBN: <%= book.ISBN %> 
-                        <% } %> 
-                    </li>
-                    <li id="booktitle"><% if(book.title != "") { %>
-                        Title: <%= book.title %>
-                        <% } %> 
-                    </li>
-                    <li id="bookedition"><% if(book.edition != "") { %>
-                        Edition: <%= book.edition %>
-                        <% } %> 
-                    </li>
-                    <li id="bookauthor"><% if(book.author != "") { %>
-                        Author: <%= book.author %> 
-                        <% } %> 
-                    </li>
-                    <br />
-                </ul>
-            </div>
-        <% }) %>
+            <% profileData.books.forEach((book, key)=>{ %>
+                <div class="book" id="book_<%= key %>">         
+                    <ul class="bookUList" id="">
+                        <li id="bookisbn"><% if(book.ISBN != "") { %>
+                            ISBN: <%= book.ISBN %> 
+                            <% } %> 
+                        </li>
+                        <li id="booktitle"><% if(book.title != "") { %>
+                            Title: <%= book.title %>
+                            <% } %> 
+                        </li>
+                        <li id="bookedition"><% if(book.edition != "") { %>
+                            Edition: <%= book.edition %>
+                            <% } %> 
+                        </li>
+                        <li id="bookauthor"><% if(book.author != "") { %>
+                            Author: <%= book.author %> 
+                            <% } %> 
+                        </li>
+                        <br />
+                    </ul>
+                </div>
+            <% }) %>
         </div>
         
 

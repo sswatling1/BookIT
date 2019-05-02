@@ -33,10 +33,12 @@ module.exports = (app)=>{
                     }
                     else
                     {
-                        console.log("user is null");
+                        res.render("pages/index");
                     }
                 }
             );
+
+            
         }); 
 
         
